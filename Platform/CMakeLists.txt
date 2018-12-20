@@ -1,0 +1,6 @@
+MESSAGE(STATUS "operation system is ${CMAKE_SYSTEM}")
+IF (WIN32)
+    add_subdirectory(Windows)
+ELSE ()
+    add_subdirectory(Linux)
+ENDIF()
